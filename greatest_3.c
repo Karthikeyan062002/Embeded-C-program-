@@ -1,27 +1,36 @@
 #include<stdio.h>
- int main()
+int call()
 {
 	int a,b,c;
-	printf("enter the three num\n");
+	printf("enter the value");
 	scanf("%d%d%d",&a,&b,&c);
-	
-	if(b<a)
-	{
-	if(c<a)
-	{
-	printf("a is greatest value:");
-  }
-	}
-	else if(c<b)
-	{
 	if(a<b)
 	{
-	printf("b is greatest value:");
+          if(b<c)
+	  {
+		  printf("%d",c);
+	  }
+	  else 
+	  {
+		  printf("%d",b);
+	  }
 	}
-	}
-	else
-	{
-		printf("c is greatest value:");
-	}
-	return 0;
+	  else if(c<a)
+	  {
+		printf("%d",a);
+	  }
+          else 
+	  {
+	      printf("%d",c);
+	  }
 }
+int main()
+{
+  call();
+  return 0;
+}  
+	
+	
+
+
+
